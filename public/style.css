@@ -41,6 +41,10 @@ body {
   z-index: 1000;
 }
 
+a {
+  word-break: break-all;
+}
+
 
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.7);
@@ -476,7 +480,7 @@ body {
 /*TRÒ CHỜI DÂN GIAN*/
 
 .trochoidangian{
-  width: 100%;
+  max-width: 100%;
   background-color: #FFFBE8;
   margin: 0;
   display: flex;
@@ -508,7 +512,7 @@ body {
 }
 
 .trochoidangian-container{
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -583,6 +587,10 @@ body {
   .quiz_trochoi h1 { font-size: 100px; }
   .content_loingo p { font-size: 20px; max-width: 80%; }
 
+  .tieu-de{font-size: 20px;}
+  .tra-loi{font-size: 20px;}
+  .loi-dau{font-size: 20px;}
+
   .gioithieu h1 { font-size: 60px; }
   .gioithieu p { font-size: 24px; max-width: 80%; }
   .slide-content .slide p { font-size: 32px; }
@@ -655,6 +663,11 @@ body {
   .gioithieu h1 { font-size: 50px; }
   .gioithieu p { font-size: 20px; max-width: 85%; }
 
+  .tieu-de{font-size: 18px;}
+  .tra-loi{font-size: 18px;}
+  .loi-dau{font-size: 18px;}
+
+
   .slide-content { margin-top: 40px; }
   .slide-content .slide { min-width: 100%; }
   .slide-content .slide img { height: 30vh; }
@@ -699,6 +712,8 @@ body {
   .quiz_trochoi h1 { font-size: 60px; }
   .quiz_trochoi p { font-size: 20px; }
 
+  .paragraph-list li{  margin-left: 10px;}
+
   .end h1 { font-size: 60px; }
   .end p { font-size: 18px; }
 
@@ -706,13 +721,19 @@ body {
   .gioithieu h1 { font-size: 40px; }
   .gioithieu p { font-size: 16px; max-width: 90%; }
 
+  .tieu-de{font-size: 16px;}
+  .tra-loi{font-size: 16px;}
+  .loi-dau{font-size: 16px;}
+
+  
   .slide-content { margin-top: 40px; }
   .slide-content .slide { min-width: 100%; }
   .slide-content .slide img { height: 30vh; }
   .slide-content .slide p { font-size: 20px; text-align: left; }
-
+  
   .trochoidangian .tieude { font-size: 50px; }
   .trochoidangian .gioi-thieu { font-size: 22px; }
+  .trochoidangian-content{max-width: 90%;}
 
   .quiz_trochoi h3 { font-size: 28px; }
   .quiz_trochoi .loi-khuyen { font-size: 18px; }
@@ -743,6 +764,12 @@ body {
   .quiz_trochoi h1 { font-size: 40px; }
   .quiz_trochoi p { font-size: 16px; }
 
+  .tieu-de{font-size: 14px;}
+  .tra-loi{font-size: 14px;}
+  .loi-dau{font-size: 14px;}
+
+  .paragraph-list li{  margin-left: 8px;}
+
   .end h1 { font-size: 40px; }
   .end p { font-size: 14px; }
 
@@ -757,7 +784,7 @@ body {
   .trochoidangian .tieude { font-size: 32px; margin-top: 30px; }
   .trochoidangian .gioi-thieu { font-size: 16px; }
 
-  .quiz_trochoi h3 { font-size: 20px; }
+  .quiz_trochoi h3 { font-size: 24px; }
   .quiz_trochoi .loi-khuyen { font-size: 14px; }
 
   .option { font-size: 16px; height: 60px; width: 95%; }
