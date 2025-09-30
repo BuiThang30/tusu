@@ -1,0 +1,764 @@
+@font-face {
+  font-family: 'LNTH-Daybreaker';
+  src: url('fonts/0226-LNTH-Daybreaker.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat Regular'), url('fonts/montserrat-webfont/Montserrat-Regular.woff') format('woff');    
+}
+
+@font-face {
+  font-family: '1FTV VIP Halagar';
+  src: url('fonts/1FTV-VIP-Halagar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #FFFBE8;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  margin-right: auto;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  color: #045063;
+  font-size: 24px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  color: #045063;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Gạch chân mặc định ẩn */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #045063;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Khi hover hoặc active thì hiện gạch chân */
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  transform: translateY(-2px);
+}
+
+
+/*Home*/
+.hero img {
+  width: 100%;       
+  height: auto;
+  display: block; 
+}
+
+.title {
+  background: #FFFBE8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  scroll-margin-top: 69px;
+}
+
+.title p {
+  color: #065269;
+  font-family: LNTH-Daybreaker;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content_loingo {
+  background: #065269;
+  padding: 50px 0;
+}
+
+.content_loingo p {
+  color: #FFFBE8;
+  text-align: justify;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;      
+  margin: 20px auto 20px;     
+  max-width: 80%;         
+}
+
+.games-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFFBE8;
+  scroll-margin-top: 69px;
+}
+
+.marquee {
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  background: #FFFBE8;
+  border-bottom: 3px solid #C3350D;
+  border-top: 3px solid #C3350D ;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #C3350D;
+  font-family: LNTH-Daybreaker;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); }
+}
+
+
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.slide {
+  min-width: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.slide p {
+  margin-top: 10px;
+  font-size: 40px;
+  color: #C3350D;
+  text-align: left;
+  font-family: LNTH-Daybreaker, serif;
+}
+.slide a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.slide a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.slide a img {
+  transition: transform 0.3s ease;
+}
+
+.slide a:hover img {
+  transform: scale(1.02);
+}
+
+
+.controls {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.controls button img {
+  width: 70px;
+  height: 50px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+}
+
+.gocchuyengia-home {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gocchuyengia-home p:hover {
+  text-decoration: none;
+  transform: scale(1.02);
+}
+
+.gocchuyengia-home img:hover {
+  text-decoration: none;
+  transform: scale(1.02);
+}
+.line{
+  margin: 50px auto 50px;
+  width: 60%;
+  height: 3px;
+  background-color: #C3350D;
+}
+
+.quiz_trochoi{
+  text-align: center;
+  margin: 110px 110px;
+}
+
+.quiz_trochoi a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.quiz_trochoi a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.quiz_trochoi p{
+  color: #C3350D;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.quiz_trochoi h1{
+  color: #C3350D;
+  font-family: LNTH-Daybreaker;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quiz_trochoi h1:hover{
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #C3350D;
+  color: transparent;
+}
+
+.end{
+  background: #035469;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.end h1{
+  color: #FFFBE8;
+  font-family: LNTH-Daybreaker;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.end p{
+  color: #FFFBE8;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 80%;
+  text-align: justify;
+}
+
+
+/*GOC CHUYEN GIA*/
+
+.gocchuyengia{
+  background-color: #FFFBE8;
+  padding: 40px 0 40px;
+  margin: auto;
+}
+.gioithieu{
+  background-color: #FFFBE8;
+  padding: 40px;
+  margin: auto;
+  max-width: 100%;
+}
+.gioithieu h1{
+  color: #C3350D;
+  text-align: center;
+  font-family: 'LNTH-Daybreaker', sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gioithieu line{
+  width: 60%;
+  height: 2px;
+  background-color: #045063;
+  margin: 20px auto;
+}
+
+.gioithieu p{
+  color: #045063;
+  text-align: justify;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: auto;
+  max-width: 80%;
+}
+
+.slide-content{
+  margin-top: 80px;
+  text-align: left;
+}
+.slide-content .slide {
+  min-width: 40%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: left;
+}
+
+.slide-content .slide img {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.slide-content .slide p {
+  margin-top: 10px;
+  font-size: 32px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #C3350D;
+  text-align: left;
+  margin: 0;
+}
+
+.gocchuyengia-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gocchuyengia-content {
+  max-width: 80%;
+}
+
+
+.loi-dau{
+  color: #045063;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.tieu-de{
+  color: #C3350D;
+  font-family: Montserrat;
+  text-align: justify;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.tra-loi{
+  color: #045063;
+  font-family: Montserrat;
+  text-align: justify;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.paragraph-list{
+  margin: 0;
+  list-style-type: disc;
+}
+
+.paragraph-list li{
+  margin-left: 20px;
+}
+
+
+/*TRÒ CHỜI DÂN GIAN*/
+
+.trochoidangian{
+  width: 100%;
+  background-color: #FFFBE8;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.trochoidangian .tieude{
+  color: #C3350D;
+  text-align: center;
+  font-family: LNTH-Daybreaker;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 50px;
+}
+
+.trochoidangian .gioi-thieu{
+  color: #C3350D;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.trochoidangian-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trochoidangian-content{
+  max-width: 80%;
+}
+
+/* quiz */
+
+.quiz_trochoi h3{
+  color: #C3350D;
+  text-align: center;
+  font-family: "1FTV VIP Halagar";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.quiz_trochoi .loi-khuyen{
+  color: #C3350D;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 15px auto;
+  width: 60%;
+  height: 96px;
+  border-radius: 10px;
+  background-color: #C3350D;
+  color: #FFFBE8;
+  font-size: 30px;
+  font-family: "1FTV VIP Halagar";
+  cursor: pointer;
+  padding-left: 20px;
+  transition: background 0.3s;
+}
+
+.option:hover{
+  background-color: #045063;
+  color: #FFFBE8;
+}
+
+.option.selected {
+  background-color: #045063;
+  color: #FFFBE8;
+}
+
+#content {
+  scroll-margin-top: 80px;
+}
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* ≥1200px (desktop lớn) */
+@media (min-width: 1200px) {
+  .title p { font-size: 100px; }
+  .slide { min-width: 30%; }
+  .quiz_trochoi h1 { font-size: 100px; }
+  .content_loingo p { font-size: 20px; max-width: 80%; }
+
+  .gioithieu h1 { font-size: 60px; }
+  .gioithieu p { font-size: 24px; max-width: 80%; }
+  .slide-content .slide p { font-size: 32px; }
+  .trochoidangian .tieude { font-size: 80px; }
+  .trochoidangian .gioi-thieu { font-size: 32px; }
+  .quiz_trochoi h3 { font-size: 40px; }
+  .quiz_trochoi .loi-khuyen { font-size: 24px; }
+}
+
+/* ≤1080px (desktop nhỏ/laptop) */
+@media (max-width:1080px) {
+  .nav-links { display: none; }
+  
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    background: #FFFBE8;
+    width: 220px;
+    border: 2px solid #045063;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 2000;
+  }
+
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    padding: 12px 15px;
+    color: #045063;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a:hover {
+    background: #045063;
+    color: #FFFBE8;
+  }
+
+  .title { height: 160px; }
+  .title p { font-size: 80px; }
+
+  .slide-track { justify-content: flex-start; }
+  .slide { min-width: 100%; padding: 5px; }
+  .slide img { height: 30vh; }
+  .slide p { font-size: 32px; text-align: left; }
+
+  .quiz_trochoi h1 { font-size: 80px; }
+  .content_loingo p { font-size: 18px; max-width: 85%; line-height: 1.6; }
+
+  .gioithieu h1 { font-size: 50px; }
+  .gioithieu p { font-size: 20px; max-width: 85%; }
+
+  .slide-content { margin-top: 40px; }
+  .slide-content .slide { min-width: 100%; }
+  .slide-content .slide img { height: 30vh; }
+  .slide-content .slide p { font-size: 28px; text-align: left; }
+
+  .trochoidangian .tieude { font-size: 70px; }
+  .trochoidangian .gioi-thieu { font-size: 28px; }
+
+  .quiz_trochoi h3 { font-size: 36px; }
+  .quiz_trochoi .loi-khuyen { font-size: 22px; }
+
+  .option { font-size: 26px; height: 80px; width: 70%; }
+}
+
+/* ≤800px (tablet) */
+@media (max-width: 800px) {
+  .navbar { padding: 12px 20px; }
+  .nav-links a { font-size: 18px; }
+  .title { height: 140px; }
+  .title p { font-size: 60px; text-align: center; }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .content_loingo p { font-size: 16px; max-width: 90%; line-height: 1.5; }
+
+  /* slide ở tablet */
+  .slide-track { justify-content: flex-start; }
+  .slide { min-width: 100%; padding: 5px; }
+  .slide img { height: 30vh; }
+  .slide p { font-size: 24px; text-align: left; }
+
+  .controls button img { width: 50px; height: 35px; }
+
+  .quiz_trochoi { margin: 60px 40px; }
+  .quiz_trochoi h1 { font-size: 60px; }
+  .quiz_trochoi p { font-size: 20px; }
+
+  .end h1 { font-size: 60px; }
+  .end p { font-size: 18px; }
+
+  .gioithieu { padding: 30px 20px; }
+  .gioithieu h1 { font-size: 40px; }
+  .gioithieu p { font-size: 16px; max-width: 90%; }
+
+  .slide-content { margin-top: 40px; }
+  .slide-content .slide { min-width: 100%; }
+  .slide-content .slide img { height: 30vh; }
+  .slide-content .slide p { font-size: 20px; text-align: left; }
+
+  .trochoidangian .tieude { font-size: 50px; }
+  .trochoidangian .gioi-thieu { font-size: 22px; }
+
+  .quiz_trochoi h3 { font-size: 28px; }
+  .quiz_trochoi .loi-khuyen { font-size: 18px; }
+
+  .option { font-size: 20px; height: 70px; width: 85%; }
+}
+
+/* ≤480px (mobile) */
+@media (max-width: 600px) {
+  .navbar { flex-direction: column; padding: 10px 15px; }
+  .nav-center { margin-top: 10px; }
+  .nav-links { flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .nav-links a { font-size: 16px; }
+
+  .title { height: 100px; padding: 0 10px; }
+  .title p { font-size: 40px; }
+
+  .content_loingo p { font-size: 12px; max-width: 95%; line-height: 1.4; }
+
+  /* slide mobile */
+  .slide { min-width: 100%; padding: 5px; }
+  .slide img { height: 25vh; }
+  .slide p { font-size: 18px; text-align: left; }
+
+  .controls button img { width: 40px; height: 28px; }
+
+  .quiz_trochoi { margin: 40px 20px; }
+  .quiz_trochoi h1 { font-size: 40px; }
+  .quiz_trochoi p { font-size: 16px; }
+
+  .end h1 { font-size: 40px; }
+  .end p { font-size: 14px; }
+
+  .gioithieu { padding: 20px 10px; }
+  .gioithieu h1 { font-size: 28px; }
+  .gioithieu p { font-size: 12px; max-width: 95%; }
+
+  .slide-content { margin-top: 20px; }
+  .slide-content .slide img { height: 25vh; }
+  .slide-content .slide p { font-size: 16px; }
+
+  .trochoidangian .tieude { font-size: 32px; margin-top: 30px; }
+  .trochoidangian .gioi-thieu { font-size: 16px; }
+
+  .quiz_trochoi h3 { font-size: 20px; }
+  .quiz_trochoi .loi-khuyen { font-size: 14px; }
+
+  .option { font-size: 16px; height: 60px; width: 95%; }
+}

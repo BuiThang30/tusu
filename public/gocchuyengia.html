@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tự Sử</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="image/logo.svg"  style="height: 39px;">
+    </div>
+
+    <div class="nav-center">
+      <div class="nav-links">
+        <a href="/home#loingo">Lời ngỏ</a>
+        <a href="/home#trochoidangian">Trò chơi dân gian</a>
+        <a href="/gocchuyengia" class="active">Góc chuyên gia</a>
+        <a href="/quiz">Quiz</a>
+      </div>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!-- Menu xổ xuống khi click ☰ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/home#loingo">Lời ngỏ</a>
+    <a href="/home#trochoidangian">Trò chơi dân gian</a>
+    <a href="/gocchuyengia">Góc chuyên gia</a>
+    <a href="/quiz">Quiz</a>
+  </div>
+
+  <div>
+    <img src="image/gocchuyengia.jpg" style="width: 100%; height: auto;">
+  </div>
+  <div class="gocchuyengia" id="noidung">
+    <div class="gioithieu">
+      <h1>Góc Chuyên Gia: TS. An Thu Trà – </h1>
+      <h1>Bảo Tồn và Truyền Lửa Trò Chơi Dân Gian</h1>
+
+      <div class="line"></div>
+
+      <p>
+        Nhằm tiếp tục khám phá và lan tỏa giá trị đặc sắc của các trò chơi dân gian Việt Nam, nhóm chúng tôi đã có dịp ghé thăm Viện Bảo tàng Dân tộc học Việt Nam – nơi lưu giữ và trưng bày những nét văn hóa truyền thống độc đáo của 54 dân tộc trên khắp cả nước. Không chỉ là nơi trưng bày hiện vật, trang phục, nhà cửa hay lễ hội, bảo tàng còn tạo ra các gian trải nghiệm tương tác sống động, nơi trẻ em và người lớn cùng tham gia các trò chơi dân gian, trực tiếp cảm nhận văn hóa truyền thống qua từng hành động, từng trò chơi.
+      </p>
+      <p>
+        Trong hành trình này, chúng tôi đã có cơ hội trò chuyện cùng TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục, người có nhiều năm kinh nghiệm cũng như tâm huyết với việc bảo tồn và truyền cảm hứng về trò chơi dân gian. Qua buổi trò chuyện, TS. Trà chia sẻ những câu chuyện về giá trị, thách thức và giải pháp để các trò chơi dân gian tiếp tục sống trong đời sống hiện đại, đồng thời gửi gắm những thông điệp đầy ý nghĩa tới thế hệ trẻ – những người sẽ tiếp nối và giữ gìn di sản văn hóa này.
+      </p>
+    </div>  
+
+    <div class="slide-content">
+      <!-- Slide ảnh -->
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide"><img src="image/gocchuyengia_1.jpg" alt="(Viện Bảo tàng Dân tộc học Việt Nam)"><p>(Viện Bảo tàng Dân tộc học Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia_2.jpg" alt="(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)"><p>(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_1.jpg" alt="(Gian trò chơi dân gian tại Phám Khám Phá)"><p>(Gian trò chơi dân gian tại Phám Khám Phá)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_2.jpg" alt="(Nhóm tác giả cùng TS. Trà tại gian trò chơi dân gian,Phòng Khám phá di sản văn hóa Việt Nam)"><p>(Nhóm tác giả cùng TS.Trà tại</p> <p>Gian trò chơi dân gian,</p> <p>Phòng Khám phá di sản văn hóa Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_3.jpg" alt="(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)"><p>(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)</p></div>
+
+
+          <!-- Clone để trượt mượt -->
+          <div class="slide"><img src="image/gocchuyengia_1.jpg" alt="(Viện Bảo tàng Dân tộc học Việt Nam)"><p>(Viện Bảo tàng Dân tộc học Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia_2.jpg" alt="(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)"><p>(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_1.jpg" alt="(Gian trò chơi dân gian tại Phám Khám Phá)"><p>(Gian trò chơi dân gian tại Phám Khám Phá)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_2.jpg" alt="(Nhóm tác giả cùng TS. Trà tại gian trò chơi dân gian,Phòng Khám phá di sản văn hóa Việt Nam)"><p>(Nhóm tác giả cùng TS.Trà tại</p> <p>Gian trò chơi dân gian,</p> <p>Phòng Khám phá di sản văn hóa Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_3.jpg" alt="(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)"><p>(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)</p></div>
+
+          <!-- Clone để trượt mượt -->
+          <div class="slide"><img src="image/gocchuyengia_1.jpg" alt="(Viện Bảo tàng Dân tộc học Việt Nam)"><p>(Viện Bảo tàng Dân tộc học Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia_2.jpg" alt="(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)"><p>(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_1.jpg" alt="(Gian trò chơi dân gian tại Phám Khám Phá)"><p>(Gian trò chơi dân gian tại Phám Khám Phá)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_2.jpg" alt="(Nhóm tác giả cùng TS. Trà tại gian trò chơi dân gian,Phòng Khám phá di sản văn hóa Việt Nam)"><p>(Nhóm tác giả cùng TS.Trà tại</p> <p>Gian trò chơi dân gian,</p> <p>Phòng Khám phá di sản văn hóa Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_3.jpg" alt="(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)"><p>(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)</p></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="prev" aria-label="Previous">
+          <img src="image/prev.svg" alt="Previous">
+        </button>
+        <button class="next" aria-label="Next">
+          <img src="image/next.svg" alt="Next">
+        </button>
+      </div>      
+    </div>
+
+    <div class="line"></div>
+
+    <div class="gocchuyengia-container">
+      <div class="gocchuyengia-content">
+        <div class="loi-dau" style="margin-bottom: 20px;">
+          Dưới đây là những chủ đề chính mà chúng tôi đã trao đổi cùng TS. Trà, kèm theo các chia sẻ thực tế và tâm huyết của cô về trò chơi dân gian trong đời sống hiện đại.
+        </div>
+
+        <div class="tieu-de" style="margin-bottom: 20px;">
+          1. Giá trị & Ý nghĩa:
+        </div>
+
+        <div class="tieu-de" style="margin-bottom: 20px;">
+          Câu hỏi: Theo cô, ngoài mục đích giải trí, trò chơi dân gian còn mang lại những giá trị gì cho trẻ em và cộng đồng ạ?
+        </div>
+
+        <div class="tra-loi">
+          <div>→ Trả lời:</div>
+          <div>Theo TS. Trà, trò chơi dân gian không chỉ đơn thuần mang tính giải trí mà còn phát huy giá trị giáo dục sâu sắc, đặc biệt với trẻ em. Khi tham gia, các em có cơ hội kết nối trực tiếp với gia đình và bạn bè, tạo ra sợi dây gắn bó trong cộng đồng.</div>
+          <div>Từ những quan sát trong các hoạt động thường niên tại bảo tàng – nơi tổ chức nhiều trò chơi dân gian đến từ các vùng miền khác nhau – cô nhận thấy trẻ em và cả phụ huynh đều trực tiếp cảm nhận được sự hứng khởi khi hòa mình với không gian thiên nhiên, với những vật dụng hết sức giản dị và dễ kiếm.</div>
+          <div style="margin-top: 20px;">“Các em có thể chơi chuyền bằng quả bưởi hay những quả bóng tennis đã bỏ đi, hay đánh hạt hồng xiêm. Chính sự mộc mạc ấy lại mang đến niềm vui thực sự.”</div>
+          <div style="margin: 20px 0 20px;">Cô nhấn mạnh rằng chính những trải nghiệm trực tiếp đó mang lại ý nghĩa giáo dục cao, khuyến khích tinh thần gắn kết, sự sẻ chia trong gia đình và cộng đồng – điều mà các hình thức giải trí hiện đại khó có thể thay thế.</div>
+        </div>
+
+        <div class="tieu-de">
+          2. Trong đời sống hiện đại:
+        </div>
+
+        <div class="tieu-de">
+          a. Câu hỏi: Theo cô, trò chơi dân gian có điểm gì thú vị mà các trò chơi/hình thức giải trí điện tử khó thay thế được, khi các bạn trẻ hiện nay thường ưa chuộng các thiết bị số?
+        </div>
+
+        <div class="tra-loi">
+          <div>→ Trả lời:</div>
+          <div style="margin-bottom: 20px;">Theo TS. Trà, dù các bạn trẻ ngày nay thường ưa chuộng giải trí điện tử, song các trò chơi dân gian vẫn có sức hút riêng bởi tính tương tác trực tiếp với thiên nhiên và con người, điều mà các trò chơi trên điện thoại hay máy tính khó có thể thay thế.</div>
+          <div style="margin-bottom: 20px;">“Thực ra, nói các bạn thích thiết bị điện tử hơn cũng không hẳn. Qua kinh nghiệm tổ chức tại bảo tàng, chúng tôi thấy rằng khi các trò chơi cho trẻ em có thể tiếp xúc trực tiếp với thiên nhiên và tương tác với bạn bè, các em đều rất hào hứng. Những trò chơi ghi tại bảo tàng luôn thu hút đông đảo các bạn nhỏ tham gia.”</div>
+          <div style="margin-bottom: 20px;">Cô Trà giải thích rằng không phải trẻ không thích chơi dân gian, mà vấn đề chính là thiếu điều kiện, không gian: trường học chật hẹp, gia đình không đủ không gian, hoặc chưa được tạo cơ hội trải nghiệm.</div>
+          <div style="margin-bottom: 20px;">“Trò chơi trên điện thoại chỉ đáp ứng được khi không gian thực tế không có, hoặc trẻ chưa có cơ hội tìm hiểu trò chơi truyền thống. Thế mạnh của trò chơi dân gian là mang lại cảm xúc thực, kết nối với thiên nhiên, với vật dụng đơn giản như tre, nứa, quả bưởi hay đũa. Các trò chơi này vừa gần gũi, vừa rèn luyện sức khỏe, ý chí và sự kiên trì – điều mà điện tử không thể mang lại.”</div>
+        </div>
+
+        <div class="tieu-de">
+          b. Câu hỏi: Theo cô, thách thức lớn nhất để trò chơi dân gian có thể tiếp tục tồn tại trong đời sống trẻ em hiện nay là gì ạ?
+        </div>
+
+        <div class="tra-loi">
+          <div style="margin-top: 20px;">→ Trả lời:</div>
+          <div>TS. Trà cho biết, thách thức lớn nhất là thiếu môi trường sống cho trò chơi dân gian và ý thức trách nhiệm của mỗi cá nhân, gia đình, cộng đồng.</div>
+          <div>“Ngày xưa, chúng tôi tự nghĩ ra trò chơi, tận dụng mọi vật dụng xung quanh, gắn kết bạn bè và tạo ra nhiều kỷ niệm đáng nhớ. Ngày nay, để trò chơi dân gian phát triển, các bạn trẻ cần hiểu giá trị đặc biệt của nó so với trò chơi điện tử – đó là cảm xúc, tình cảm và sự sáng tạo trực tiếp.”</div>
+          <div>Cô Trà đề xuất các giải pháp thiết thực:</div>
+          <ul class="paragraph-list">
+            <li>
+              Gia đình: Chơi các trò chơi đơn giản như cá ngựa, ô ăn quan vào cuối tuần, để kết nối các thế hệ.
+            </li>
+
+            <li>
+              Trường học: Tạo “góc trò chơi dân gian” trong lớp hoặc thư viện để học sinh thực hành.
+            </li>
+
+            <li>
+              Cộng đồng: Tổ chức sự kiện, hội chơi dân gian, để trẻ trải nghiệm trực tiếp.
+            </li>
+
+            <li>
+              Ứng dụng công nghệ: Khi không gian hạn chế, có thể đưa trò chơi dân gian vào VR, game giáo dục hoặc sản phẩm công nghệ tương tác.
+            </li>
+          </ul>
+        </div>
+
+        <div class="loi-dau">
+          “Khi biết chơi qua công nghệ, trẻ em sẽ hiểu và yêu quý trò chơi đó, từ đó tìm cách áp dụng nó trong đời sống hằng ngày. Đây là cách rất thiết thực để trò chơi dân gian tìm được môi trường sống và phát triển trong bối cảnh hiện đại.”
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-content">
+      <!-- Slide ảnh -->
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide"><img src="image/gocchuyengia_1.jpg" alt="(Viện Bảo tàng Dân tộc học Việt Nam)"><p>(Viện Bảo tàng Dân tộc học Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia_2.jpg" alt="(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)"><p>(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_1.jpg" alt="(Gian trò chơi dân gian tại Phám Khám Phá)"><p>(Gian trò chơi dân gian tại Phám Khám Phá)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_2.jpg" alt="(Nhóm tác giả cùng TS. Trà tại gian trò chơi dân gian,Phòng Khám phá di sản văn hóa Việt Nam)"><p>(Nhóm tác giả cùng TS.Trà tại</p> <p>Gian trò chơi dân gian,</p> <p>Phòng Khám phá di sản văn hóa Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_3.jpg" alt="(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)"><p>(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)</p></div>
+
+
+          <!-- Clone để trượt mượt -->
+          <div class="slide"><img src="image/gocchuyengia_1.jpg" alt="(Viện Bảo tàng Dân tộc học Việt Nam)"><p>(Viện Bảo tàng Dân tộc học Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia_2.jpg" alt="(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)"><p>(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_1.jpg" alt="(Gian trò chơi dân gian tại Phám Khám Phá)"><p>(Gian trò chơi dân gian tại Phám Khám Phá)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_2.jpg" alt="(Nhóm tác giả cùng TS. Trà tại gian trò chơi dân gian,Phòng Khám phá di sản văn hóa Việt Nam)"><p>(Nhóm tác giả cùng TS.Trà tại</p> <p>Gian trò chơi dân gian,</p> <p>Phòng Khám phá di sản văn hóa Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_3.jpg" alt="(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)"><p>(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)</p></div>
+
+          <!-- Clone để trượt mượt -->
+          <div class="slide"><img src="image/gocchuyengia_1.jpg" alt="(Viện Bảo tàng Dân tộc học Việt Nam)"><p>(Viện Bảo tàng Dân tộc học Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia_2.jpg" alt="(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)"><p>(TS. An Thu Trà – Trưởng phòng Truyền thông & Giáo dục)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_1.jpg" alt="(Gian trò chơi dân gian tại Phám Khám Phá)"><p>(Gian trò chơi dân gian tại Phám Khám Phá)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_2.jpg" alt="(Nhóm tác giả cùng TS. Trà tại gian trò chơi dân gian,Phòng Khám phá di sản văn hóa Việt Nam)"><p>(Nhóm tác giả cùng TS.Trà tại</p> <p>Gian trò chơi dân gian,</p> <p>Phòng Khám phá di sản văn hóa Việt Nam)</p></div>
+          <div class="slide"><img src="image/gocchuyengia2_3.jpg" alt="(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)"><p>(Trẻ em và gia đình chơi trò chơi dân gian tại bảo tàng)</p></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="prev" aria-label="Previous">
+          <img src="image/prev.svg" alt="Previous">
+        </button>
+        <button class="next" aria-label="Next">
+          <img src="image/next.svg" alt="Next">
+        </button>
+      </div>      
+    </div>
+
+    <div class="line"></div>
+
+    <div class="gocchuyengia-container">
+      <div class="gocchuyengia-content">
+        <div class="tieu-de">
+          c. Câu hỏi: Cô có thể gửi gắm một số thông điệp tới các bạn trẻ ngày nay về việc gìn giữ và bảo vệ trò chơi dân gian không ạ?
+        </div>
+
+        <div class="tra-loi">
+          <div style="margin-top:20px;">→ Trả lời:</div>
+          <div>
+            “Các bạn chính là những nhân vật quan trọng để gìn giữ và phát triển di sản văn hóa, bao gồm trò chơi dân gian. Trước tiên, mỗi bạn hãy tự tìm hiểu, trải nghiệm và khám phá giá trị ẩn sâu mỗi trò chơi. Từ đó, với kiến thức và trí tuệ ngày nay, các bạn có thể sáng tạo các cách mới để bảo tồn và phát huy trò chơi dân gian, giúp chúng sống mãi trong đời sống hiện đại.”
+          </div>
+
+          <div style="font-weight:700; margin-top:14px;">Ứng dụng công nghệ:</div>
+          <div>
+            Theo con được biết, trong những năm gần đây Bảo tàng Dân tộc học có đem đến cho trẻ em trải nghiệm những nét đặc trưng của dịp Tết Trung thu qua kính thực tế ảo. Cô thấy việc ứng dụng công nghệ như vậy có thể mở ra cơ hội cho việc đưa trò chơi dân gian đến gần với trẻ em hơn không ạ?
+          </div>
+
+          <div style="margin-top:8px;">
+            Theo TS. Trà, việc kết hợp công nghệ thực tế ảo (VR) với di sản văn hóa truyền thống trong ba năm gần đây đã mở ra một cách tiếp cận mới với giới trẻ, vừa tạo sức hút, vừa khơi gợi hứng thú khám phá.
+          </div>
+
+          <ul class="paragraph-list">
+            <li>Nói với thế hệ trẻ: Nhờ công nghệ VR, những trò chơi dân gian được “tái sinh” dưới hình thức trẻ trung, gần gũi, từ đó giúp trẻ dễ tiếp cận và cảm nhận nét đẹp của văn hóa truyền thống.</li>
+            <li>Giáo dục lồng ghép trong giải trí: Nội dung trò chơi không chỉ mang tính giải trí mà còn tích hợp thông điệp về ý nghĩa văn hóa, khiến trẻ vừa chơi vừa học được nhiều giá trị.</li>
+            <li>Một số trò chơi tiêu biểu:
+              <ul class="paragraph-list">
+                <li>“Vui cùng đêm hội Trung thu” – mô phỏng trò “cắt hoa quả”, nhưng thay bằng các món quà Trung thu, thể hiện nếp sống rộn ràng, tạo nên không gian đậm màu lễ hội.</li>
+                <li>“Ông tiến sĩ giấy” và “Ô ăn quan thách gậy” – được số hóa, giúp trẻ tiếp cận những trò chơi dân gian quen thuộc qua hình thức thú vị, đa dạng hơn.</li>
+              </ul>
+            </li>
+            <li>Phản hồi từ phụ huynh và trẻ em: Nhiều trẻ hào hứng tham gia, phụ huynh cũng sẵn sàng đồng hành để con trải nghiệm văn hóa giáo dục cao.</li>
+            <li>Ý nghĩa tổng thể: Các trò chơi VR không chỉ giúp khách tham quan dễ dàng nắm bắt thông tin mà còn mở ra “cầu nối” đưa trò chơi dân gian trong đời sống hiện đại.</li>
+          </ul>
+
+          <div style="font-weight:700; margin-top:14px;">Cô nhấn mạnh:</div>
+          <div>
+            “Nội dung trò chơi được thiết kế vừa mang tính giải trí vừa ý nghĩa giáo dục. Chính cơ hội này giúp trò chơi dân gian đi được đến gần hơn với trẻ em – những người vốn quen với công nghệ nhưng ít có điều kiện tiếp xúc với truyền thống.”
+          </div>
+        </div>
+
+        <div class="tieu-de" style="margin:20px 0 20px;">
+          2. Ra thế giới: Nếu chọn một trò chơi dân gian để giới thiệu với bạn bè quốc tế, cô sẽ chọn trò nào và mong họ cảm nhận điều gì về văn hoá Việt Nam ạ?
+        </div>
+
+        <div class="tra-loi">
+          <div>
+            Theo TS. Trà, trò chơi dân gian có tính quốc tế cao. Chính vì thế, khi giới thiệu ra thế giới, điều quan trọng không chỉ là cho bạn bè quốc tế thấy sự quen thuộc, mà còn để họ nhận ra những nét độc đáo làm nên bản sắc Việt Nam.
+          </div>
+
+          <ul class="paragraph-list">
+            <li><strong>Nhảy lò cò:</strong>
+              <ul class="paragraph-list">
+                <li>Nguyên tắc chơi khá tương đồng giữa các nước, nhưng điểm khác biệt nổi bật của Việt Nam là sự đa dạng, sáng tạo trong hình vẽ ô nhảy – con thỏ, ngôi nhà, hay nhiều hình ảnh ngộ nghĩnh khác.</li>
+                <li>Do khách quốc tế từ đó cảm nhận được tinh thần sáng tạo, trí tưởng tượng phong phú và sự hồn nhiên vui tươi đặc trưng của thiếu nhi Việt.</li>
+              </ul>
+            </li>
+
+            <li><strong>Đi cà kheo:</strong>
+              <ul class="paragraph-list">
+                <li>Có mặt ở nhiều nước (Thái Lan, Lào, Nhật Bản, Hàn Quốc), nhưng tại Việt Nam lại mang dấu ấn riêng miền núi.</li>
+                <li>Ở miền núi, cà kheo gắn với đời sống mưu sinh, là phương tiện đi lại trong mùa mưa lũ.</li>
+                <li>Ở miền biển (Nam Định, Thái Bình), cà kheo cao tới 1,5–2m, giúp ngư dân di chuyển khi đánh bắt hải sản.</li>
+                <li>Nhờ vậy, trò chơi được khoác lên mình nét đẹp thể hiện sự gắn bó mật thiết với đời sống lao động và môi trường tự nhiên của người Việt.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <div>Cô kết luận:</div>
+          <div>
+            “Qua những trò chơi dân gian, bạn bè quốc tế sẽ thấy rõ nét văn hóa Việt Nam – một nền văn hóa vừa gần gũi vừa sáng tạo, vừa gắn liền với lao động đời thường, vừa toát lên những nét hồn nhiên, tươi sáng, đa dạng và trí tưởng tượng phong phú của con người Việt…”
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color:#FFFBE8; width: 100%; padding:100px 0 5px;">
+    <div class="line" style="width: 100%; background-color: #045063; margin:0"></div>
+  </div>
+  <div class="end">
+    <div style="margin:150px auto 150px;">
+      <h1>CHÀO KẾT</h1>
+
+      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <p style="font-style: italic; margin: 0;">Hành trình cùng TS. An Thu Trà tại Viện Bảo tàng Dân tộc học Việt Nam không chỉ giúp chúng tôi hiểu rõ hơn về giá trị của các trò chơi dân gian mà còn mở ra những góc nhìn về cách gìn giữ và phát huy di sản văn hóa trong đời sống hiện đại. Trò chơi dân gian không chỉ là niềm vui, mà còn là phương tiện kết nối người với người, rèn luyện sức khỏe, khơi dậy sự sáng tạo và truyền tải những giá trị giáo dục sâu sắc.</p>
+        <p style="font-style: italic; margin: 0;">Qua những chia sẻ của cô, có thể thấy rằng việc giữ gìn các trò chơi dân gian đòi hỏi sự chung tay từ gia đình, nhà trường, cộng đồng và cả sự hỗ trợ của công nghệ hiện đại. Mỗi chúng ta, đặc biệt là thế hệ trẻ,  đều có thể trở thành “người truyền lửa”, giúp những giá trị truyền thống này tiếp tục sống và lan tỏa, từ những gian trò chơi nhỏ trong lớp học, gia đình, đến những trải nghiệm sống động tại bảo tàng.</p>
+        <p style="font-style: italic; margin: 0;">Hãy cùng nhau khám phá, chơi và giữ gìn trò chơi dân gian để văn hóa Việt Nam luôn sống động và gần gũi với mỗi thế hệ nhé!</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

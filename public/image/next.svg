@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#C3350D">
+  <!-- Tam giác sau (bên trái) -->
+  <polygon points="10,6 16,12 10,18" />
+  <!-- Tam giác trước (bên phải, đè lên) -->
+  <polygon points="14,6 20,12 14,18" />
+</svg>
