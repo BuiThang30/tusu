@@ -217,12 +217,24 @@ a {
 }
 
 .slide p {
-  margin-top: 10px;
+  margin: 10px 0 0;
   font-size: 40px;
   color: #C3350D;
   text-align: left;
   font-family: LNTH-Daybreaker, serif;
 }
+
+.slide h4{
+  color: #C3350D;
+  text-align: justify;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
 .slide a {
   text-decoration: none;
   color: inherit;
@@ -654,8 +666,9 @@ a {
 
   .slide-track { justify-content: flex-start; }
   .slide { min-width: 100%; padding: 5px; }
-  .slide img { height: 30vh; }
+  .slide img { height: 40vh; }
   .slide p { font-size: 36px; text-align: left; }
+  .slide h4{ font-size: 20px; text-align: left;}
 
   .quiz_trochoi h1 { font-size: 80px; }
   .content_loingo p { font-size: 18px; max-width: 85%; line-height: 1.6; }
@@ -703,8 +716,9 @@ a {
   /* slide ở tablet */
   .slide-track { justify-content: flex-start; }
   .slide { min-width: 100%; padding: 5px; }
-  .slide img { height: 30vh; }
-  .slide p { font-size: 28px; text-align: left; }
+  .slide img { height: 35vh; }
+  .slide p { font-size: 32px; text-align: left; }
+  .slide h4{ font-size: 18px; text-align: left;}
 
   .controls button img { width: 50px; height: 35px; }
 
@@ -755,8 +769,9 @@ a {
 
   /* slide mobile */
   .slide { min-width: 100%; padding: 5px; }
-  .slide img { height: 25vh; }
-  .slide p { font-size: 20px; text-align: left; }
+  .slide img { height: 35vh; }
+  .slide p { font-size: 30px; text-align: left; }
+  .slide h4{ font-size: 16px; text-align: left;}
 
   .controls button img { width: 40px; height: 28px; }
 
